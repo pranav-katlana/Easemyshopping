@@ -1,0 +1,137 @@
+{%extends 'base.html'%}
+{%block body%}
+        <h4 style="margin-left: 550px; font-size: 25px; font-family: sans-serif; color:black; margin-top: 25px;">
+            Cashback Form </h4>
+
+        <style>
+            .placeholder {
+                background-color: black;
+                font-size: 11px;
+                width: 260px;
+                height: 40px;
+                margin-top: 25px;
+                border: solid;
+                border-color: black;
+                border-width: thin;
+                border-radius: 6px;
+                margin-left: 535px;
+            }
+            .elements {
+                height:35px;
+            }
+        </style>
+        <form>
+        
+    <!-- main screen -->
+    <div style="width:auto;height:250px;
+   border: solid; border-color: black; ;
+   border-width: 4px; margin-top: 15px;">
+                
+    <!-- form 1         -->
+            <div style=" width: 300px; float: left;; background-color:white;
+        color: white; border: solid; border-color: black;margin-left:20px;
+        border-width: thin;">
+                    <center>
+                        <h3 style="color: black;">Customer Information</h3>
+                        <h5 style="color: black; margin-top: -10px;">(Will be used for Cashback)</h5>
+                    <table>
+                        <tr>
+                            <td>
+                                
+                            </td>
+                            <td>
+                                <input type="text" class="elements" placeholder="Customer Name" name="customer_name">
+                            </td>
+                        </tr>
+                        <tr style="margin-top: 10px;">
+                            <td>
+                                
+                            </td>
+                            <td>
+                                <input type="email" class="elements" placeholder="Email" name="Email">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                
+                            </td>
+                            <td>
+                                <input type="number" class="elements" placeholder="Mobile No" name="Mobile_No">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                
+                            </td>
+                            <td>
+                                <input type="text"  class="elements" placeholder="UPI ID" name="UPI_ID">
+                            </td>
+                        </tr>
+                    </table>
+                    </center>
+            </div>
+            <!-- Form 2 -->
+            <div style="width: 300px; float: left; background-color:  rgba(0, 0, 0, 0.3); color:  white;
+        border: solid; border-color: black;
+        border-width: thin;margin-left:60px;">
+                    <center>
+                    <table>
+                    
+                        <tr>
+                            <td>
+                                
+                            </td>
+                            <td>
+                                <input type="text" class="elements" placeholder="Product Name" name="Product_Name">
+                            </td>
+                        </tr>
+                        <table>
+                            <tr>
+                                <td>
+                                
+                                </td>
+                                <td>
+                                    <input class="elements" type="number" placeholder="Order ID" name="Order_ID">
+                                </td>
+                            </tr>
+                            <table>
+                                <tr>
+                                    <td>
+                                        
+                                    </td>
+                                    <td>
+                                        
+                                        <select class="elements" name="Platform">
+                                            <option value="Select">Select Platform</option>
+                                            <option value="Amazon">Amazon</option>
+                                            <option value="Flipkart">Flipkart</option>
+                                        </select>
+                                        </td>
+                                    </td>
+                                </tr>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            <input type="text" class="elements" placeholder="Order Value" name="Order_Value">
+                                        </td>
+                                    </tr>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                
+                                            </td>
+                                            <td>
+                                                <input type="date" placeholder="Date of Order" name="Date" class="elements">
+                                            </td>
+                                        </tr>
+                                
+                                        </table>
+                                    </center>
+        </div>
+            
+        </form>
+    </div>
+    {%endblock body%}
